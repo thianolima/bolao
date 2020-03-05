@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"/>
+<title>Cadastro</title>
+</head>
+<body>
+	<form method="POST"  action="/convites">
+		<label>Login</label>
+		<input type="text" id="login" name="login"/>
+		
+		<label>Senha</label>
+		<input type="password" id="senha" name="senha"/>
+		
+		<input type="hidden" id="idConvite" name="idConvite" th:value="${idConvite}"/>
+		
+		<button type="submit">Cadastrar</button>
+		
+	</form>
+</body>
+</html>
